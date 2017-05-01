@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    android:keyWidth="10%p"
+    android:horizontalGap="0px"
+    android:verticalGap="0px"
+    android:keyHeight="@dimen/key_height"
+    >
+    <Row>
+        <Key android:codes="65" android:keyLabel="A" android:keyEdgeFlags="left"/>
+        <Key android:codes="97" android:keyLabel="a"/>
+        <Key android:codes="105" android:keyLabel="i"/>
+        <Key android:codes="117" android:keyLabel="u"/>
+        <Key android:codes="101" android:keyLabel="e"/>
+        <Key android:codes="111" android:keyLabel="o"/>
+        <Key android:codes="107" android:keyLabel="k"/>
+        <Key android:codes="75" android:keyLabel="K"/>
+        <Key android:codes="103" android:keyLabel="g"/>
+        <Key android:codes="71" android:keyLabel="G" android:keyEdgeFlags="right"/>
+    </Row>
+
+    <Row>
+        <Key android:codes="99" android:keyLabel="c" android:horizontalGap="5%p"
+            android:keyEdgeFlags="left"/>
+        <Key android:codes="67" android:keyLabel="C"/>
+        <Key android:codes="106" android:keyLabel="j"/>
+        <Key android:codes="74" android:keyLabel="J"/>
+        <Key android:codes="116" android:keyLabel="t"/>
+        <Key android:codes="84" android:keyLabel="T"/>
+        <Key android:codes="100" android:keyLabel="d"/>
+        <Key android:codes="68" android:keyLabel="D"/>
+        <Key android:codes="87" android:keyLabel="w" android:keyEdgeFlags="right"/>
+    </Row>
+
+    <Row>
+        <Key android:codes="64" android:keyLabel="\@"
+            android:keyWidth="15%p" android:keyEdgeFlags="left"/>
+        <Key android:codes="120" android:keyLabel="x"/>
+        <Key android:codes="88" android:keyLabel="X"/>
+        <Key android:codes="113" android:keyLabel="q"/>
+        <Key android:codes="81" android:keyLabel="Q"/>
+        <Key android:codes="110" android:keyLabel="n"/>
+        <Key android:codes="87" android:keyLabel="W"/>
+        <Key android:codes="35" android:keyLabel="\#"/>
+        <Key android:codes="-5" android:keyIcon="@drawable/sym_keyboard_delete"
+            android:keyWidth="15%p" android:keyEdgeFlags="right"
+            android:isRepeatable="true"/>
+    </Row>
+
+    <Row android:rowEdgeFlags="bottom">
+        <Key android:codes="-3" android:keyIcon="@drawable/sym_keyboard_done"
+            android:keyWidth="15%p" android:keyEdgeFlags="left"/>
+        <Key android:codes="-2" android:keyLabel="a1\?" android:keyWidth="10%p"/>
+        <!--
+            android:codes: -101 is not a framework-defined key code but a key code that is
+            privately defined in com.example.android.softkibord.lAtinkibordviyu.
+        -->
+        <Key android:codes="-101" android:keyIcon="@drawable/sym_keyboard_language_switch"
+            android:keyWidth="10%p"/>
+        <Key android:codes="32" android:keyIcon="@drawable/sym_keyboard_space"
+            android:keyWidth="30%p" android:isRepeatable="true"/>
+        <Key android:codes="46,44" android:keyLabel=". ,"
+            android:keyWidth="15%p"/>
+        <Key android:codes="10" android:keyIcon="@drawable/sym_keyboard_return"
+            android:keyWidth="20%p" android:keyEdgeFlags="right"/>
+    </Row>
+</Keyboard>
